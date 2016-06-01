@@ -21,4 +21,6 @@ Instructions
 
 5. Open command prompt in directory containing this script on the D drive. type sh, type  generate_fox_screenshots.ksh. You will see the DM on your workstation  open BLANKSCRN.fdf and start cycling through graphics and taking screenshots. 
 
-6. Depending on how many graphics you have, it may take a while to run. The delays are required so that the graphic can load all objects from the OM.
+6. Be sure to select your FoxView/Control HMI window immediately after starting the script. The screenshot is taken of the "active window".
+
+7. Depending on how many graphics you have, it may take a while to run. The delays are required so that the graphic can load all objects from the OM.
