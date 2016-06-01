@@ -15,7 +15,10 @@
 # 6. Depending on how many graphics you have, it may take a while to run. The 
 #    delays are required so that the graphic can load all objects from the OM.
 
-for DISP in $(find /opt/graphics/folder1/ /opt/graphics/folder2/ /opt/graphics/folder3/ -name "*.fdf")
+# This for loop will screenshot all .fdf files in folder1, folder2, and folder3, omitting any 
+# graphics that contain "exclude" in the filename. List as many folders as required, excluding
+# strings as required. 
+for DISP in $(find /opt/graphics/folder1/ /opt/graphics/folder2/ /opt/graphics/folder3/ -name "*.fdf" ! -name "*exclude*")
 do
 	cd d:
 	pref -LTRBUG dmcmd /opt/graphics/BLANKSCRN.fdf
