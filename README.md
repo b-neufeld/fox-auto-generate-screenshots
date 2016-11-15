@@ -1,6 +1,6 @@
 # fox-auto-generate-screenshots
-* Use case: Take screenshots of graphics or overlays in specified subfolders on the Foxboro DCS.
-* Use case: Comment out the screenshot function and run the script to open all graphics on a workstation (graphic optimization occurs the first time a graphic is opened on a WP) 
+* Use case: Take screenshots of graphics or overlays in specified subfolders on the Foxboro DCS. Useful for sharing screenshots of graphics with plant personnel for marking up, error correction, documentation, etc. 
+* Use case: Comment out the screenshot function and run the script to open all graphics on a workstation (graphic optimization occurs the first time a graphic is opened on a WP). Useful for quickly eliminating the lag associated with opening graphics for the first time on a new AW or WP.
 
 Brahm Neufeld, May 2016
 
