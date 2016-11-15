@@ -1,7 +1,6 @@
 # fox-auto-generate-screenshots
-Take screenshots of graphics in specified subfolders on the Foxboro DCS.
-
-Auto-generate screenshots of Foxboro DCS graphics
+* Use case: Take screenshots of graphics or overlays in specified subfolders on the Foxboro DCS.
+* Use case: Comment out the screenshot function and run the script to open all graphics on a workstation (graphic optimization occurs the first time a graphic is opened on a WP) 
 
 Brahm Neufeld, May 2016
 
