@@ -17,6 +17,8 @@
 # 7. The screenshot functions can be commented out to simply open all graphics or 
 #    overlays one by one (graphics optimizer)
 
+
+
 # initial sleep command so that user has time to give focus to the appropriate FoxView DM. 
 sleep 5
 
@@ -52,8 +54,15 @@ do
 	# echo debug output 
 	echo $SAV
 	# save command to HyperSnap (FoxView DM must have focus) 
+		# EXTRA NOTES 2022-01-14 from Brian Long, running on a Win2008/HyperSnap6 setup:
+		# "It needed to have an -exit at the end of the command line otherwise it only works once. Also had to put in a few more sleeps to give everything a “chance” to work."
+		# "One more thing, since DISP is /x/x/x, it was putting an extra slash in in the command line as well, changed to D:/opt/graphics/screenshots$DISP.jpeg"
+		# Brian's edited line for the main command: 
+		# HyprSnap6.exe -snap:awin -save d:/blah/blah.jpeg -exit
 	HprSnap6 -snap:awin -save:png $SAV
 	# END SCREENSHOT SECTION------------------------------
+	
+	
 	
 	# close graphic
 	pref -LTRBUG dmcmd close
